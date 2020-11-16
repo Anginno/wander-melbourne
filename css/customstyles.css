@@ -1,0 +1,615 @@
+p, h1, h2, h3, h4, h5, h6, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Utility Classes */
+
+/* Colors */
+.white {
+    color: white;
+}
+
+.white:hover {
+    color: white;
+}
+
+.blue {
+	color: #303D8E;
+}
+
+.backgroundYellow {
+    background-color: #FFE082;
+}
+
+.backgroundGrey {
+    background-color: #E3E3E3;
+}
+
+/* Other */
+
+.noDecoration {
+	text-decoration: none;
+}
+
+.noDecoration:hover {
+	text-decoration: none;
+}
+
+.bold {
+    font-weight: 900; 
+}
+
+.hugeText {
+    font-size: 144px;
+}
+
+.largeText {
+    font-size: 64px;
+}
+
+.semiLargeText {
+    font-size: 40px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+.removeOverflow {
+    overflow: hidden;
+}
+
+.submitBtn {
+    font-size: 12px;
+    background: #3498db;
+    padding: 7px 20px 7px 20px;
+    text-decoration: none;
+    border-style: none; 
+    margin-bottom: 2px;
+}
+
+.submitBtn:hover {
+    background: #3cb0fd;
+    text-decoration: none; 
+    transition: 0.3s;
+}
+
+.textInput {
+  padding: 5px 20px 5px 20px;  
+  border-style: none;
+}
+
+.textShadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+}
+
+.backgroundCenterFill {
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+/* Tag Specific Classes */
+.hamburgerButton {
+    border: solid black 3px;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+    float: left;
+    z-index: 6;
+}
+
+.burgerLine1 {
+    background-color: black;
+    width: 30px;
+    height: 3px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: 0.5s;
+}
+
+/* Class property to make the line rotate */
+.rotateRight {
+    transform:translate(0px, 9px) rotate(45deg);
+}
+
+.burgerLine2 {
+    background-color: black;
+    width: 30px;
+    height: 3px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: 0.5s;
+}
+
+/* Class property to make the line rotate */
+.rotateLeft {
+    transform:translate(0px, -7px) rotate(-45deg);
+}
+
+.hamburgerContainer {
+    position: fixed;
+    transition: 0.5s ease-in;
+    left: 0%;
+    height: 100%;
+    width: 50vw;
+    z-index: 5;
+    display: block;
+}
+
+/* Hiding hamburger content */
+.hiddenLeft {
+    left: -150%;
+}
+
+.containerShadow {
+	-webkit-box-shadow: 17px 0px 75px -21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 17px 0px 75px -21px rgba(0,0,0,0.75);
+    box-shadow: 17px 0px 75px -21px rgba(0,0,0,0.75);
+}
+
+.hamburgerContent {
+    position: absolute;
+    padding-left: 5vw;
+    height: 100%;
+    padding-top: 100px;
+    padding-right: auto;
+}
+
+.navLinkBlue {
+    text-decoration: none;
+    cursor: pointer;
+    color: #303D8E;
+}
+
+.navLinkBlue:hover {
+    color: #4665c9;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.navLinkWhite {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.navLinkWhite:hover {
+    color: #4665c9;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.navLinkBlack {
+    text-decoration: none;
+    color: black;
+}
+
+.navLinkBlack:hover {
+    color: #303D8E;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.navLinkHeroText {
+   text-decoration: none;
+    color: black; 
+}
+
+.navLinkHeroText:hover {
+   text-decoration: none;
+    color: black; 
+}
+
+.buttonBlue {
+	background-color: #303D8E;
+	text-decoration: none;
+	width: 100%;
+	height: 100px;
+	padding-left: 15px;
+	padding-top: 25px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.buttonBlue:hover {
+	background-color: #4665c9;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.siteOverlay {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    transition: 0.49s;
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+}
+
+/* Site overlay hidden class */
+.invisible {
+    opacity: 0;
+    z-index: 0;
+}
+
+.actionSection {
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+.footerPadding {
+    padding-top: 30px;
+    margin-top: 150px;
+}
+
+.footerSection1 {
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.footerSection2 {
+	padding-bottom: 50px;
+}
+
+.glyphicons {
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.glyphicons:hover {
+	color: #303D8E;
+}
+
+.heroContainer {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.heroImgLandmarks {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    background-image: url(../images/yarraCityScape.jpg);
+}
+
+.heroImgInfo {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    background-image: url(../images/information.jpg);
+}
+
+.heroImgEvents {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    background-image: url(../images/fedSquare.jpg);
+}
+
+.heroText {
+    position: absolute;
+    top: 35vh;
+    left: 13vw;
+}
+
+.heroText2 {
+    position: absolute;
+    bottom: 0;
+    left: 8vw;
+}
+
+.middleBackground {
+	background-image: url(../images/aboutSectionImg.jpg);
+}
+
+.aboutUsSection {
+	height: 650px;
+	background-color:rgba(255, 224, 130, 0.9);
+}
+
+.imageLinkContainer {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.imageLinkContainer:hover {
+    width: 101%;
+    height: auto;
+    -webkit-box-shadow: -7px 7px 20px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -7px 7px 20px -2px rgba(0,0,0,0.75);
+    box-shadow: -7px 7px 20px -2px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+
+.imageLink {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.wideImageGallery {
+	width: 100%;
+	height: auto;
+    position: relative;
+}
+
+.tallImageGallery {
+	height: auto;
+	width: 100%;
+	position: relative;
+}
+
+.eventImgContainer {
+	position: relative;
+	width: 100%;
+	height: auto;
+    transition: 0.2s;
+}
+
+.eventImgContainer:hover {
+    width: 101%;
+    height: auto;
+    -webkit-box-shadow: -7px 7px 20px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -7px 7px 20px -2px rgba(0,0,0,0.75);
+    box-shadow: -7px 7px 20px -2px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+
+.eventImg {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.eventDate {
+	position: absolute;
+	bottom: 0;
+	margin-left: 5px;
+}
+
+.eventLinkContainer {
+    margin-bottom: 50px;
+}
+
+.buttonText {
+    cursor: pointer;
+    text-align: center;
+}
+
+.cardContainer {
+    overflow: hidden;
+    height: 250px;
+}
+
+.cardMargin {
+    margin-top: 25px;
+}
+
+.headerIcons {
+	width: 100px;
+	height: auto;
+}
+
+.melbMapBtn {
+    background-image: url('../images/melbourneMap.jpg');
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.trainMapBtn {
+    background-image: url('../images/ptvMap.jpg');
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.tramMapBtn {
+    background-image: url('../images/tramMap.png');
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.btnText {
+    bottom: 0;
+    margin-left: 15px;
+    position: absolute;
+}
+
+.buttonContainer {
+    height: 100px;
+    margin-top: 50px;
+    width: 250px;
+}
+
+.iconContainer {
+    fill: #3cb0fd;;
+}
+
+.heroImgAttr {
+     width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    background-image: url(../images/yellowBrickBuilding.jpg);
+}
+
+.fourOhFour {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+}
+
+/* Media Queries */
+
+/* for screen size or smaller */
+
+/* Extra small devices*/
+@media (max-width: 575px) { 
+	
+	.hugeText {
+		font-size: 45px;
+	}
+	
+    .largeText {
+    font-size: 40px;
+    }
+
+    .semiLargeText {
+        font-size: 16px;
+    }
+    
+    .heroText {
+    	position: absolute;
+    	top: 25vh;
+    	left: 5vw;
+	}
+
+    .imageLink {
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
+    }
+}
+
+/* Small devices*/
+@media (max-width: 767px) { 
+    .hamburgerContent {
+        width: 100vw;
+    }
+    
+    .submitEmail {
+    	margin-top: 50px;
+    }
+    
+    .aboutUsSection {
+        height: 300px;
+        padding-top: 15px;
+        margin-top: 450px;
+        background-color:rgba(255, 224, 130, 1);
+    }
+    
+    .imageLink {
+    	left: 30px;
+    	bottom: 5px;
+    }
+	
+	.iconContainer {
+		margin-top: 20px;
+	}
+}
+
+/* Medium devices*/
+@media (max-width: 991px) { 
+    .largeText {
+        font-size: 48px;
+    }
+
+    .semiLargeText {
+        font-size: 32px;
+    }
+    
+    .hugeText {
+    	font-size: 72px;
+    }
+
+}
+
+/* Large devices*/
+@media (max-width: 1090px) { 
+
+}
+
+/* for screen size or larger */
+       
+/*Small devices*/
+@media (min-width: 544px) { 
+    
+    
+    }
+
+/*Medium devices*/
+@media (min-width: 767px) { 
+    .hamburgerContent {
+        width: 60vw;
+    }
+    
+    .submitEmail {
+		float: right;
+        margin-top: -10px;
+	}
+	
+	.glyphicons {
+		margin-top: 20px;
+	}
+    
+    .aboutUsSection{
+        padding-top: 150px;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+	    
+}
+
+/*Large devices*/
+@media (min-width: 992px) {
+    .hamburgerContent {
+        width: 50vw;
+    }
+    
+    .aboutUsSection{
+        padding: 120px;
+    }
+    
+}
+
+/*Extra large devices*/
+@media (min-width: 1200px) { 
+
+    .aboutUsSection {
+        height: 650px;
+        background-color:rgba(255, 224, 130, 0.9);
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 200px;
+    }
+    
+}
